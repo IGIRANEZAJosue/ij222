@@ -1,0 +1,12 @@
+
+.App {
+    display: flex;
+}
+
+.active {
+    @apply bg-primary/20;
+}
+
+.nav-item {
+    @apply flex items-center cursor-pointer gap-4 h-10 mx-3 pl-4 pr-6 text-[#18171f] rounded-lg duration-300 hover:ml-4 hover:text-[#00bfa6];
+}
