@@ -33,7 +33,7 @@ function App() {
 					<Route path='/notifications' element={<Notifications/>} />
 					<Route path='/settings' element={<Settings/>} />
 				</Routes>
-
+					
 			</div>
 
    		</div>

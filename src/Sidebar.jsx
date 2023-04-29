@@ -34,7 +34,7 @@ const Sidebar = () => {
                 </CustomLink>
 
                 <CustomLink to="/loans" className="nav-item">
-                    <i className="fa-light fa-hand-holding-dollar text-lg"></i>
+                    <i className="fa-regular fa-hand-holding-dollar text-lg"></i>
                     <h4 className="text-base font-medium">Loans</h4>
                 </CustomLink>
                 
