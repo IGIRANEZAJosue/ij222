@@ -68,10 +68,10 @@ const Payments = () => {
                   <div>
                      {info.map((item) => (
                         <div key={item.id} className="flex">
-                              <p className="flex-[3]">{item.action}</p>
-                              <p className="flex-1 text-end">{item.date}</p>
-                              <p className="flex-1 text-end">${item.amount}</p>
-                              <p className="flex-1 text-end text-primary">{item.status}</p>
+                           <p className="flex-[3]">{item.action}</p>
+                           <p className="flex-1 text-end">{item.date}</p>
+                           <p className="flex-1 text-end">${item.amount}</p>
+                           <p className="flex-1 text-end text-primary">{item.status}</p>
                         </div>
                      ))}
                   </div>    
