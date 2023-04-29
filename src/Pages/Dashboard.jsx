@@ -71,6 +71,7 @@ const Dashboard = () => {
                      <img className="w-32 h-32" src="images/undraw_profile_pic.svg" alt="" />
                      <br />
                      <h1 className="font-semibold ">HAKIZAMUNGU Joseph</h1>
+                     <Link to="/profile" className="text-xs font-medium bg-lightPurple/20 px-2 py-1 rounded-md">View Profile</Link>
                   </div>
                   <div className="w-[100%] flex flex-col gap-4">
                      <h1 className="flex items-center justify-between font-semibold">Reminders 
