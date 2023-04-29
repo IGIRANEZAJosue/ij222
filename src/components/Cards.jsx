@@ -7,10 +7,10 @@ const cards = () => {
 
          <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">Your account</h1>
-            <span className="flex items-center gap-2 text-sm font-bold ">
-               <Link to="/payments"><p>View Details</p></Link>
+            <Link to="/payments" className="flex items-center gap-2 text-sm font-bold ">
+               <p>View Details</p>
                <i class="fa-solid fa-arrow-right-long"></i>
-            </span>
+            </Link>
          </div>
 
          <div className="cards flex gap-4 ">
