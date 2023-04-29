@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProfileInfo from '../components/ProfileInfo'
 
 const Profile = () => {
