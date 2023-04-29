@@ -34,14 +34,14 @@ const Transactions = () => {
         {
             id: 5,
             action: "Made a contribution",
-            amount:340,
+            amount:749,
             date: "29-04-2023",
-            status: "Confirmed"
+            status: "Failed"
         },
         {
             id: 6,
-            action: "Made a contribution",
-            amount:340,
+            action: "Sent money to IRADUKUNDA",
+            amount:440,
             date: "29-04-2023",
             status: "Confirmed"
         },
