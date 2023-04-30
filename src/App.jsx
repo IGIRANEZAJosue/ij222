@@ -1,5 +1,6 @@
 
 import './App.css'
+
 import Sidebar from './Sidebar'
 import Dashboard from "./Pages/Dashboard"
 import Payments from "./Pages/Payments"
@@ -13,12 +14,11 @@ import { Route, Routes } from "react-router-dom"
 
 
 
-function App() {
-	
 
+function App() {
 
   	return (
-    	<div className='App text-[#18171f] font-poppins  '>
+    	<div className='App  text-[#18171f] dark:text-white dark:bg-textBlack font-poppins  '>
 
 			<Sidebar />
 			

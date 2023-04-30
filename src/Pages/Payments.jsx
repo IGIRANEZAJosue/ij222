@@ -22,6 +22,9 @@ const Payments = () => {
                   
                   <div className="transactions">
                      <Transactions />
+                     <div>
+                        <h1>Hello World</h1>
+                     </div>
                   </div>    
                      
 

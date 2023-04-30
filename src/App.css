@@ -8,9 +8,10 @@
 }
 
 .nav-item {
-    @apply flex items-center cursor-pointer gap-4 h-10 mx-3 pl-4 pr-6 text-[#18171f] rounded-lg duration-300 hover:ml-4 hover:text-[#00bfa6];
+    @apply flex items-center cursor-pointer gap-4 h-10 mx-3 pl-4 pr-6 text-[#18171f] rounded-lg duration-300 hover:ml-4 hover:text-[#00bfa6] dark:text-white;
 }
 
 .transaction-item {
     @apply flex-1 text-end
 }
+

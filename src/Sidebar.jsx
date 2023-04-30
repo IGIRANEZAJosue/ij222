@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     return (
 
-    <aside className="sidebar bg-[#fff] h-[100vh] w-[17vw] shadow-2xl flex-1 flex flex-col justify-between p-4">
+    <aside className="sidebar dark:bg-[#2F2E41]/30 dark:text-white bg-[#fff] h-[100vh] w-[17vw] shadow-2xl flex-1 flex flex-col justify-between p-4">
 
             <div className="top flex items-center">
                 <div className="logo">
