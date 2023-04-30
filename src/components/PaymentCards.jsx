@@ -28,7 +28,7 @@ const PaymentCards = () => {
          <h1 className="flex items-center gap-4 font-semibold text-xl mb-2"> <i class="fa-light fa-money-bill-wave text-lg"></i> Total Shares</h1>
          <div className="flex justify-between items-center font-semibold text-2xl">
             <p>$8000</p>
-            <div className="radial-progress text-danger" style={{"--value":65}}>65%</div>
+            <div className="radial-progress text-[#dc2626]" style={{"--value":65}}>65%</div>
          </div>
          <small>Last 30 days</small>
       </div>

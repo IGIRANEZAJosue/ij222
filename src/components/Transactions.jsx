@@ -15,7 +15,7 @@ const Transactions = () => {
             action: "Sent money to IGIRANEZA",
             amount: 250,
             date: "19-04-2023",
-            status: "Pending"
+            status: "Completed"
         },
         {
             id: 3,
@@ -57,7 +57,7 @@ const Transactions = () => {
                 <p className="transaction-item">${item.amount}</p>
                 <p className={
                     item.status == "Failed" 
-                        ? "transaction-item text-danger" 
+                        ? "transaction-item text-[#dc2626]" 
                         : item.status == "Pending" 
                         ? "transaction-item text-[#a3e635]" 
                         : "transaction-item text-primary" 
