@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Cards from '../components/Cards';
-import Reminder from '../components/Reminders';
+import Reminders from '../components/Reminders';
 import { Link } from 'react-router-dom';
+
 
 const Dashboard = () => {
 
@@ -81,7 +82,7 @@ const Dashboard = () => {
                      <h1 className="flex items-center justify-between font-semibold">Reminders 
                         <i class="fa-regular fa-bell"></i></h1>
                      
-                     <Reminder />
+                     <Reminders />
                      
                   </div>
                   

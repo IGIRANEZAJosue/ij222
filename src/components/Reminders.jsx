@@ -24,7 +24,7 @@ const Reminders = () => {
          </div> 
          <div className="flex gap-4 items-center">
             <div className="p-3 w-[40px] h-[40px] rounded-lg flex justify-center items-center rounded-3 text-[24px] text-[#00bfa6] bg-[#BCF0DA]/50 ">
-               <img className="w-[24px] h-[24px] " src="images/trending-up2.svg"/>
+                  <i class="fa-regular fa-arrow-up-right-dots"></i>
             </div>
             <div>
                <p className="text-xs font-medium">You have a loan payment due on the 5th may.</p>

@@ -33,7 +33,7 @@ const cards = () => {
                   <p className=" font-medium">Total Shares</p>
                   <h1 className=" font-bold text-2xl ">1159</h1>
                </div>
-               <p >+15%</p>
+               <p>+15%</p>
             </div>
 
             <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-danger rounded-2xl text-white">
