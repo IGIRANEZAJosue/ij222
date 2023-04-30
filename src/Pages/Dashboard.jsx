@@ -21,7 +21,7 @@ const Dashboard = () => {
 
                {/* Dashboard Center*/}
                <div className="flex items-start gap-4 mb-4 ">
-                  <div className=" flex flex-[3] dark:bg-[#2f2e41]/30 bg-white flex-col h-full px-4 py-2 gap-2 rounded-2xl drop-shadow-xl ">
+                  <div className=" flex flex-[3] dark:bg-[#2f2e41]/40 bg-white flex-col h-full px-4 py-4 gap-2 rounded-2xl drop-shadow-xl ">
                      <div className="flex justify-between items-center mb-1 ">
                         <h5 className=" text-lg font-bold ">Recent Transactions</h5>
                         <Link to="/payments"><p className=" flex items-center gap-2 ">More <i class="fa-solid fa-arrow-right-long"></i></p></Link>
