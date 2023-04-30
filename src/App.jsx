@@ -22,7 +22,7 @@ function App() {
 
 			<Sidebar />
 			
-			<div className="container min-h-[100vh] ml-[17vw]">
+			<div className="container min-h-screen ml-[17vw]">
 
 				<Routes>
 					<Route path='/' element={<Home/>} />

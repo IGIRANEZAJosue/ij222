@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     return (
 
-    <aside className="sidebar fixed dark:bg-[#2F2E41]/30 dark:text-white bg-[#fff] h-[100vh] w-[17vw] shadow-2xl flex-1 flex flex-col justify-between p-4">
+    <aside className="sidebar fixed dark:bg-[#2F2E41]/30 dark:text-white bg-[#fff] h-screen w-[17vw] shadow-2xl flex-1 flex flex-col justify-between p-4">
 
             <div className="top flex items-center">
                 <div className="logo">
@@ -54,7 +54,7 @@ const Sidebar = () => {
                 </CustomLink>
             </div>
 
-            <div className="logout mt-[80%] ml-8">
+            <div className="logout mt-[70%] ml-8">
                 <Link to="#" className="flex items-center gap-4 h-12 font-bold text-[#18171f]">
                     <i className="fa-regular fa-arrow-right-from-bracket text-lg"></i>
                     <h4>Logout</h4>
