@@ -21,6 +21,10 @@ root {
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  transition: all 400ms ease-in-out;
+}
+
 body {
   display: flex;
   box-sizing: border-box;

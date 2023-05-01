@@ -65,7 +65,7 @@ const Dashboard = () => {
             {/*Dashboard Right*/}
             <div className="flex-[1.1] flex flex-col items-center gap-4 bg-[#fff] dark:bg-[#2f2e41]/30 min-h-[100vh] p-4 ">
                <div className=' w-full flex items-center justify-between font-bold cursor-pointer'>
-                  <i class="fa-duotone fa-toggle-off dark:fa-toggle-on dark:text-white text-[26px]"></i>
+                  <i class="fa-solid fa-toggle-off dark:fa-toggle-on dark:text-white text-[26px]"></i>
                   <div className="flex gap-4 items-center">
                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
                      <p>Logout</p>
