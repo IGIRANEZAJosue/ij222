@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notifications = () => {
    return (
-      <div className="p-4 w-[83vw] ">
+      <div className="p-4 w-[82vw]">
          <header className='text-4xl font-semibold mb-4 '>Notifications</header>
          <div className="notifications w-[70%] flex flex-col gap-4">
 

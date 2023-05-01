@@ -7,7 +7,7 @@ const PaymentCards = () => {
    {/*CARDS*/}
    <div className="flex gap-3" >
       <div className="flex-1 p-4 bg-white gap-4 rounded-xl drop-shadow-2xl hover:drop-shadow-sm duration-300 ">
-         <h1 className="flex items-center gap-4 font-semibold text-xl mb-2"> <i class="fa-light fa-money-bill-wave text-lg"></i> Total Contributions</h1>
+         <h1 className="flex items-center gap-4 font-semibold text-xl mb-2"> <i class="fa-regular fa-circle-dollar text-xl"></i> Total Contributions</h1>
          <div className="flex justify-between items-center font-semibold text-2xl">
             <p>$8000</p>
             <div className="radial-progress text-primary text-[18px]" style={{"--value":89}}>89%</div>
@@ -25,7 +25,7 @@ const PaymentCards = () => {
       </div>
 
       <div className="flex-1 p-4 bg-white rounded-xl drop-shadow-2xl hover:drop-shadow-sm duration-300  ">
-         <h1 className="flex items-center gap-4 font-semibold text-xl mb-2"> <i class="fa-regular fa-money-bill-wave text-lg"></i> Total Shares</h1>
+         <h1 className="flex items-center gap-4 font-semibold text-xl mb-2"> <i class="fa-regular fa-arrow-up-right-dots text-lg"></i> Total Shares</h1>
          <div className="flex justify-between items-center font-semibold text-2xl">
             <p>$8000</p>
             <div className="radial-progress text-[#dc2626]" style={{"--value":65}}>65%</div>
