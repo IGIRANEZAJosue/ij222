@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
+   
+   const themeToggler = "";
 
    return (
       <>
          <div className='font-Poppins flex w-[83vw] '>
-            <div className="flex-[4] p-4">
+            <div className="flex-[4] p-4 mr-[19vw]">
                <h1 className='text-4xl font-semibold mb-2'>Overview</h1>
                <div className="flex justify-around items-center mb-4 bg-primary/20 w-[100%] h-[130px] p-4 rounded-xl font-semibold ">
                   <div>
@@ -63,9 +65,9 @@ const Dashboard = () => {
             </div>
 
             {/*Dashboard Right*/}
-            <div className="flex-[1.1] flex flex-col items-center gap-4 bg-[#fff] dark:bg-[#2f2e41]/30 min-h-[100vh] p-4 ">
+            <div className="flex-[1.1] fixed right-0 w-[19vw] flex flex-col items-center gap-4 bg-[#fff] dark:bg-[#2f2e41]/30 min-h-[100vh] p-4 ">
                <div className=' w-full flex items-center justify-between font-bold cursor-pointer'>
-                  <i class="fa-solid fa-toggle-off dark:fa-toggle-on dark:text-white text-[26px]"></i>
+                  <i class="fa-solid fa-toggle-off text-[26px]"></i>
                   <div className="flex gap-4 items-center">
                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
                      <p>Logout</p>

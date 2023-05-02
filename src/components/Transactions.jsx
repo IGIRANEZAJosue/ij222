@@ -51,7 +51,7 @@ const Transactions = () => {
   return (
     <div>
         {info.map((item) => (
-            <div key={item.id} className="flex">
+            <div key={item.id} className="flex mb-4">
                 <p className="flex-[3]">{item.action}</p>
                 <p className="transaction-item">{item.date}</p>
                 <p className="transaction-item">${item.amount}</p>
