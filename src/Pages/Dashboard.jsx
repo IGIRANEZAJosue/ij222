@@ -6,7 +6,26 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
    
-   const themeToggler = "";
+   const [isToggled, setisToggled] = useState(false);
+   const [darkMode, setDarkMode] = useState(() => JSON.parse(localStorage.getItem('darkMode')) || false);
+
+   useEffect(() => {
+     if (darkMode) {
+       document.documentElement.classList.add('dark');
+       setisToggled(true);
+     } else {
+       document.documentElement.classList.remove('dark');
+       setisToggled(false);
+     }
+     localStorage.setItem('darkMode', JSON.stringify(darkMode));
+
+   }, [darkMode]);
+ 
+   const toggleDarkMode = () => {
+     setDarkMode(!darkMode);
+   //   setisToggled(!isToggled);
+   };
+ 
 
    return (
       <>
@@ -67,7 +86,10 @@ const Dashboard = () => {
             {/*Dashboard Right*/}
             <div className="flex-[1.1] fixed right-0 w-[19vw] flex flex-col items-center gap-4 bg-[#fff] dark:bg-[#2f2e41]/30 min-h-[100vh] p-4 ">
                <div className=' w-full flex items-center justify-between font-bold cursor-pointer'>
-                  <i class="fa-solid fa-toggle-off text-[26px]"></i>
+                  
+                  {/*Dark Mode Toggler*/}
+                  <i onClick={() => toggleDarkMode()} class={isToggled ? "fa-duotone fa-toggle-on text-[26px] " : "fa-duotone fa-toggle-off text-[26px] duration-300" }></i>
+                  
                   <div className="flex gap-4 items-center">
                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
                      <p>Logout</p>
