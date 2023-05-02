@@ -60,7 +60,7 @@ const Transactions = () => {
                         ? "transaction-item text-[#dc2626]" 
                         : item.status == "Pending" 
                         ? "transaction-item text-[#a3e635]" 
-                        : "transaction-item text-primary" 
+                        : "transaction-item text-primaryCol" 
                     }>{item.status}</p>
             </div>
         ))}

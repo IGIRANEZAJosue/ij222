@@ -14,7 +14,7 @@ const Sidebar = () => {
             <div className="top flex items-center">
                 <div className="logo">
                     <Link to="/">
-                        <h1 className="text-3xl font-extrabold font-montserrat text-primary">NYUNGURA</h1>
+                        <h1 className="text-3xl font-extrabold font-montserrat text-primaryCol">NYUNGURA</h1>
                     </Link>
                 </div>
                 <div className="close hidden m-auto text-lg" id="close-btn">

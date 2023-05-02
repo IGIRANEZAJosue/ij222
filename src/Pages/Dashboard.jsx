@@ -32,7 +32,7 @@ const Dashboard = () => {
          <div className='font-Poppins flex w-[83vw] '>
             <div className="flex-[4] p-4 mr-[19vw]">
                <h1 className='text-4xl font-semibold mb-2'>Overview</h1>
-               <div className="flex justify-around items-center mb-4 bg-primary/20 w-[100%] h-[130px] p-4 rounded-xl font-semibold ">
+               <div className="flex justify-around items-center mb-4 bg-primaryCol/20 w-[100%] h-[130px] p-4 rounded-xl font-semibold ">
                   <div>
                      <h5>Welcome back Joseph</h5> 
                      <p>You've paid 80% of your Loans</p>
@@ -53,7 +53,7 @@ const Dashboard = () => {
                      </span>
                      <span className="flex justify-between">
                         <p>Made a contribution</p>
-                        <p className="font-bold text-primary ">$120</p>
+                        <p className="font-bold text-primaryCol ">$120</p>
                      </span>
                      <span className="flex justify-between">
                         <p>Paid a Loan</p>

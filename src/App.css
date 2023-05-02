@@ -5,7 +5,7 @@
 }
 
 .active {
-    @apply bg-primary/20;
+    @apply bg-primaryCol/20;
 }
 
 .nav-item {

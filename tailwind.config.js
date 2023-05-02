@@ -15,7 +15,7 @@ export default {
       }
     },
     colors: {
-      primary: "#00bfa6",
+      primaryCol: "#00bfa6",
       textBlack: "#18171f",
       white: "#fff",
       dark30: "#1F1E29",
@@ -28,7 +28,7 @@ export default {
       montserrat: ['Montserrat', 'sans-serif'],
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
   //plugins: [require("daisyui")],
 }
 

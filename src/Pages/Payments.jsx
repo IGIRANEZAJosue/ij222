@@ -5,7 +5,7 @@ import Transactions from '../components/Transactions';
 const Payments = () => {
 
    return (
-      <div className="p-4 w-[83vw] flex flex-col gap-4 " >
+      <div className="p-4 w-[82vw] flex flex-col gap-4 " >
          <header className='text-4xl font-semibold '>Payments</header>
          <PaymentCards />
          

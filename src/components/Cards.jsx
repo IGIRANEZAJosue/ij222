@@ -25,7 +25,7 @@ const cards = () => {
                </div>
             </div>
 
-            <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-primary rounded-2xl text-white">
+            <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-primaryCol rounded-2xl text-white">
                <div className="bg-[#8CEEE1]/50 p-2 rounded-lg w-[64px] h[64px] flex justify-center items-center ">
                   <img src="images/trending-up.svg" />
                </div>
