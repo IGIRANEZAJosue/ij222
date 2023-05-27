@@ -18,7 +18,7 @@ import { Route, Routes } from "react-router-dom"
 function App() {
 
   	return (
-    	<div className='App  text-[#18171f] dark:text-white dark:bg-textBlack font-poppins  '>
+    	<div className='App  text-[#18171f] dark:text-white dark:bg-gray-900 font-poppins  '>
 
 			<Sidebar />
 			

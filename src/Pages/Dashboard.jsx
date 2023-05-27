@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Cards from '../components/Cards';
 import Reminders from '../components/Reminders';
 import { Link } from 'react-router-dom';
@@ -23,7 +23,6 @@ const Dashboard = () => {
  
    const toggleDarkMode = () => {
      setDarkMode(!darkMode);
-   //   setisToggled(!isToggled);
    };
  
 
@@ -96,7 +95,7 @@ const Dashboard = () => {
                   </div>
                </div>
                <div className="flex flex-col justify-between items-center h-full w-full">
-                  <div className=" flex flex-col items-center">
+                  <div className=" flex flex-col items-center mb-6">
                      <img className="w-32 h-32" src="images/undraw_profile_pic.svg" alt="" />
                      <br />
                      <h1 className="font-semibold ">HAKIZAMUNGU Joseph</h1>

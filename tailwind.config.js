@@ -10,11 +10,7 @@ export default {
 
   theme: {
     extend: {
-      dropShadow: {
-        shadow: "10px 10px 20px rgba(0, 0, 0, 0.2)"
-      }
-    },
-    colors: {
+      colors: {
       primaryCol: "#00bfa6",
       textBlack: "#18171f",
       white: "#fff",
@@ -22,6 +18,11 @@ export default {
       lightPurple: "#6C63FF",
       danger: "#F98080"
     },
+      dropShadow: {
+        shadow: "10px 10px 20px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    
 
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],

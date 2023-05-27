@@ -7,7 +7,7 @@ const Profile = () => {
       <header className=" text-4xl font-semibold mb-4 ">Profile</header>
          <div className="flex">
             <div className="flex-[5]"> 
-               <p className="flex items-center gap-2 mb-4">Account Status:<span className="py-1 px-3 bg-primary/20 text-primary rounded-lg">Active</span></p>
+               <p className="flex items-center gap-2 mb-4">Account Status:<span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">Active</span></p>
                <div className="flex gap-16">
                   <img src="images/undraw_profile_pic.svg" alt="Profile Pic" />
                   <ProfileInfo />
