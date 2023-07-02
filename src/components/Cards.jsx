@@ -1,57 +1,49 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const cards = () => {
+const AnalyticsCards = () => {
    return (
-      <div className=" cards flex flex-col gap-2">
+      <div className=" flex gap-6 text-gray-900 " >
 
-         <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">Your account</h1>
-            <Link to="/payments" className="flex items-center gap-2 text-sm font-bold ">
-               <p>View Details</p>
-               <i class="fa-solid fa-arrow-right-long"></i>
-            </Link>
+         <div className="card1 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+            <div className=" flex flex-col gap-[6px]">
+               <p className=" font-semibold text-[#828282]">MEMBERS</p>
+               <h1 className=" font-bold text-[30px]">30,220</h1>
+               <p className=" text-xs ">6 May - 7 May</p>
+            </div>
+            <span className=" flex flex-col items-center">
+               <h1 className=" font-semibold text-[30px] text-success">+15%</h1>
+               <p className=" text-xs">Since last month</p>
+            </span>
          </div>
-
-         <div className="cards flex gap-4 ">
-
-            <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-lightPurple rounded-2xl text-white ">
-               <div className="bg-[#8DA2FB]/80 p-2 rounded-lg w-[64px] h[64px] flex justify-center items-center ">
-                  <i class="fa-regular fa-circle-dollar text-3xl"></i>
-               </div>
-               <div>
-                  <p className=" font-medium">Total Contributions</p>
-                  <h1 className=" font-bold text-2xl ">$1200</h1>
-               </div>
+         
+         <div className="card2 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+            <div className=" flex flex-col gap-[6px]">
+               <p className=" font-semibold text-[#828282]">REVENUE</p>
+               <h1 className=" font-bold text-[30px]">30,220</h1>
+               <p className=" text-xs ">6 May - 7 May</p>
             </div>
-
-            <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-primaryCol rounded-2xl text-white">
-               <div className="bg-[#8CEEE1]/50 p-2 rounded-lg w-[64px] h[64px] flex justify-center items-center ">
-                  <img src="images/trending-up.svg" />
-               </div>
-               <div>
-                  <p className=" font-medium">Total Shares</p>
-                  <h1 className=" font-bold text-2xl ">1159</h1>
-               </div>
-               <p>+15%</p>
+            <span className=" flex flex-col items-center">
+               <h1 className=" font-semibold text-[30px] text-success">+5%</h1>
+               <p className=" text-xs">Since last month</p>
+            </span>
+         </div>
+         
+         <div className="card3 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+            <div className=" flex flex-col gap-[6px]">
+               <p className=" font-semibold text-[#828282]">CONTRIBUTIONS</p>
+               <h1 className=" font-bold text-[30px]">30,220</h1>
+               <p className=" text-xs ">6 May - 7 May</p>
             </div>
-
-            <div className="card flex-1 flex flex-row items-center gap-4 p-4 bg-danger rounded-2xl text-white">
-               <div className="bg-[#FFB8B8]/50 p-2 rounded-lg w-[64px] h[64px] flex justify-center items-center ">
-                  <i class="fa-light fa-hand-holding-dollar text-3xl"></i>
-               </div>
-               <div>
-                  <p className=" font-medium">Total Loans</p>
-                  <h1 className=" font-bold text-2xl ">$3200</h1>
-               </div>
-            </div>
-
-         </div>   
-
+            <span className=" flex flex-col items-center">
+               <h1 className=" font-semibold text-[30px] text-danger">-1%</h1>
+               <p className=" text-xs">Since last month</p>
+            </span>
+         </div>
          
       </div>
       
   )
 }
 
-export default cards;
+export default AnalyticsCards;

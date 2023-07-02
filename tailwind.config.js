@@ -16,7 +16,8 @@ export default {
       white: "#fff",
       dark30: "#1F1E29",
       lightPurple: "#6C63FF",
-      danger: "#F98080"
+      danger: "#DC3545",
+      success: "#28A745"
     },
       dropShadow: {
         shadow: "10px 10px 20px rgba(0, 0, 0, 0.2)"

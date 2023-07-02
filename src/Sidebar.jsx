@@ -38,14 +38,9 @@ const Sidebar = () => {
                     <h4 className="text-base font-medium">Loans</h4>
                 </CustomLink>
                 
-                <CustomLink to="/profile" className="nav-item">
-                    <i className="fa-regular fa-user text-lg"></i>
-                    <h4 className="text-base font-medium">Profile</h4>
-                </CustomLink>
-
-                <CustomLink to="/notifications" className="nav-item">
-                    <i class="fa-regular fa-bell text-lg"></i>
-                    <h4 className="text-base font-medium">Notifications</h4>
+                <CustomLink to="/members" className="nav-item">
+                    <i class="fa-regular fa-users text-lg"></i>
+                    <h4 className="text-base font-medium">Members</h4>
                 </CustomLink>
                 
                 <CustomLink to="/settings" className="nav-item">
