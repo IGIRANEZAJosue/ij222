@@ -20,7 +20,7 @@ const AnalyticsCards = () => {
          <div className="card2 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
             <div className=" flex flex-col gap-[6px]">
                <p className=" font-semibold text-[#828282]">REVENUE</p>
-               <h1 className=" font-bold text-[30px]">30,220</h1>
+               <h1 className=" font-bold text-[30px]">$3,220</h1>
                <p className=" text-xs ">6 May - 7 May</p>
             </div>
             <span className=" flex flex-col items-center">
@@ -32,7 +32,7 @@ const AnalyticsCards = () => {
          <div className="card3 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
             <div className=" flex flex-col gap-[6px]">
                <p className=" font-semibold text-[#828282]">CONTRIBUTIONS</p>
-               <h1 className=" font-bold text-[30px]">30,220</h1>
+               <h1 className=" font-bold text-[30px]">$2,220</h1>
                <p className=" text-xs ">6 May - 7 May</p>
             </div>
             <span className=" flex flex-col items-center">

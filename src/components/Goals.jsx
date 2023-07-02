@@ -17,7 +17,7 @@ const Goals = () => {
 
          <div className="goals flex gap-6">
                            
-            <Goal percentage={revenue} color="#6C63FF" name="Revenue" />
+            <Goal percentage={revenue} color="#6C63FF" name="Revenue"/>
             <Goal percentage={contributions} color="#F05252" name="Contributions" />
             <Goal percentage={newMembers} color="#00bfa6" name="New Members" isComplete= {true} />
             <Goal percentage={loanPayments} color="#E3A008" name="Loan Payments" />
