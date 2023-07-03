@@ -5,7 +5,7 @@ const AnalyticsCards = () => {
    return (
       <div className=" flex gap-6 text-gray-900 " >
 
-         <div className="card1 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+         <div className="card1 w-1/3 p-4 flex justify-between items-center bg-white rounded-xl">
             <div className=" flex flex-col gap-[6px]">
                <p className=" font-semibold text-[#828282]">MEMBERS</p>
                <h1 className=" font-bold text-[30px]">30,220</h1>
@@ -17,7 +17,7 @@ const AnalyticsCards = () => {
             </span>
          </div>
          
-         <div className="card2 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+         <div className="card2 w-1/3 p-4 flex justify-between items-center bg-white rounded-xl">
             <div className=" flex flex-col gap-[6px]">
                <p className=" font-semibold text-[#828282]">REVENUE</p>
                <h1 className=" font-bold text-[30px]">$3,220</h1>
@@ -29,7 +29,7 @@ const AnalyticsCards = () => {
             </span>
          </div>
          
-         <div className="card3 flex-1 p-4 flex justify-between items-center bg-white rounded-xl">
+         <div className="card3 w-1/3 p-4 flex justify-between items-center bg-white rounded-xl">
             <div className=" flex flex-col gap-[6px]">
                <p className=" font-semibold text-[#828282]">CONTRIBUTIONS</p>
                <h1 className=" font-bold text-[30px]">$2,220</h1>

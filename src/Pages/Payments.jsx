@@ -1,13 +1,16 @@
 import React from 'react'
 import PaymentCards from '../components/PaymentCards'
 import Transactions from '../components/Transactions';
+import DashboardHeader from '../components/DashboardHeader';
 
 const Payments = () => {
 
    return (
       <div className="p-4 w-[82vw] flex flex-col gap-4 " >
-         <header className='text-4xl font-semibold '>Payments</header>
-         <PaymentCards />
+         
+         <DashboardHeader page="Payments" />
+
+         
          
          <div className="flex w-full ">
             <div className="flex-[3]">

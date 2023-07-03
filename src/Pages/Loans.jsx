@@ -1,9 +1,10 @@
 import React from 'react'
+import DashboardHeader from '../components/DashboardHeader';
 
 const Loans = () => {
   return (
     <div className='p-4 w-[83vw]'>
-        <header className='text-4xl font-semibold mb-2'>Loans</header>
+      <DashboardHeader page="Loans" />
     </div>
   )
 }

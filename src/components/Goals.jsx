@@ -12,8 +12,8 @@ const Goals = () => {
    const loanPayments = 30;
 
    return (
-      <div className=" flex flex-col gap-4 text-gray-800">
-         <h1 className=" font-semibold text-2xl">Goals</h1>
+      <div className=" flex flex-col gap-2 text-gray-800 pt-4">
+         <h1 className=" font-semibold text-[24px]">Goals</h1>
 
          <div className="goals flex gap-6">
                            
