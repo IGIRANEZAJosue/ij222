@@ -21,7 +21,7 @@ const BarChart = () => {
    const options = {
      
       xaxis: {
-         categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
        },
 
       dataLabels: {
@@ -36,7 +36,7 @@ const BarChart = () => {
 
       plotOptions: {
          bar: {
-           borderRadius: 4,
+           borderRadius: 2,
            columnWidth: '55%',
          }
       }
@@ -48,7 +48,7 @@ const BarChart = () => {
 
    return (
 
-      <div className=" bg-white p-4 rounded-2xl">
+      <div className=" bg-white p-4 h-[390px] rounded-2xl">
          <Chart 
             options={options}
             series={series}

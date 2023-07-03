@@ -5,6 +5,7 @@ import Goals from '../components/Goals';
 import DashboardHeader from '../components/DashboardHeader';
 import MonthlyIncomeChart from '../components/MonthlyIncomeChart';
 import BarChart from '../components/BarChart';
+import PieChart from '../components/PieChart';
 
 
 const Dashboard = () => {
@@ -19,7 +20,7 @@ const Dashboard = () => {
 
             <div className=" flex items-center gap-6 py-6">
                <div className=" w-1/3">
-                  <BarChart />
+                  <PieChart />
                </div>
 
                <div className=" w-2/3">
