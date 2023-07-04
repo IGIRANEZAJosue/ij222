@@ -18,9 +18,9 @@ const DashboardHeader = ({page}) => {
                <i class="fa-solid fa-caret-down"></i>
             </span>
 
-            <span className=" flex items-center justify-center w-12 h-12 bg-primaryCol/20 rounded-xl">
+            <button className=" flex items-center justify-center w-12 h-12 bg-primaryCol/20 rounded-xl hover:outline outline-2">
                <h1 className=" font-bold text-textBlack text-[20px]">M</h1>
-            </span>
+            </button>
                
          </span>
 
