@@ -1,6 +1,6 @@
 import React from 'react'
 import DashboardHeader from '../components/DashboardHeader';
-import MemberList from '../components/MemberList';
+import PaymentsList from '../components/PaymentsList';
 
 const Payments = () => {
 
@@ -9,7 +9,7 @@ const Payments = () => {
          
          <DashboardHeader page="Payments" />
 
-         <MemberList />
+         <PaymentsList />
 
       </div>
    );   

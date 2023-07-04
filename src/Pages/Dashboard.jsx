@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-import Cards from '../components/Cards';
 import { Link } from 'react-router-dom';
 import Goals from '../components/Goals';
 import DashboardHeader from '../components/DashboardHeader';
-import MonthlyIncomeChart from '../components/MonthlyIncomeChart';
 import BarChart from '../components/BarChart';
 import PieChart from '../components/PieChart';
+import AnalyticsCards from '../components/AnalyticsCards';
 
 
 const Dashboard = () => {
@@ -16,7 +15,7 @@ const Dashboard = () => {
            
             <DashboardHeader page="Dashboard" />
 
-            <Cards />
+            <AnalyticsCards />
 
             <div className=" flex items-center gap-6 py-6">
                <div className=" w-1/3">

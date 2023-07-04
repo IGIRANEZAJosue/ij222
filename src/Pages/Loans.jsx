@@ -1,6 +1,6 @@
 import React from 'react'
 import DashboardHeader from '../components/DashboardHeader';
-import AnalyticsCards from '../components/Cards';
+import AnalyticsCards from '../components/AnalyticsCards';
 
 const Loans = () => {
    return (
