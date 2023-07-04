@@ -36,7 +36,7 @@ const MemberList = () => {
       "email": "acrosfield4@goodreads.com",
       "year": 2001,
       "contributions": "$877.13",
-      "duty": "Member"
+      "duty": "Admin"
     }, {
       "id": 6,
       "fullName": "Delia Prettyjohn",
@@ -358,7 +358,7 @@ const MemberList = () => {
       <>
 
          {/*Admins*/}
-         <div class="relative overflow-x-auto mb-6 rounded-2xl">
+         <div class="relative overflow-x-auto mb-6 rounded-2xl drop-shadow-lg">
 
             <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
                <span className="flex items-center gap-5">
@@ -366,7 +366,7 @@ const MemberList = () => {
                   <h1 className="font-bold text-2xl">Admins</h1>
                </span>
 
-               <button className="flex items-center gap-3 bg-gray-100 px-6 py-3 rounded-xl">
+               <button className="flex items-center gap-3 bg-[#f0f2f5] px-6 py-3 rounded-xl">
                   <i class="fa-regular fa-circle-plus text-[20px]"></i>
                   <p className=" text-sm font-medium">Add New Admin</p>
                </button>
@@ -403,7 +403,7 @@ const MemberList = () => {
                      
                      if (member.duty === "Admin"){
                         return(
-                           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                           <tr key={member.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                  {member.id}
                               </th>
@@ -434,7 +434,7 @@ const MemberList = () => {
          </div>
 
          {/*Members */}
-         <div class="relative overflow-x-auto rounded-2xl">
+         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg">
 
             <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
                <span className="flex items-center gap-5">
@@ -478,7 +478,7 @@ const MemberList = () => {
                   {data.map((member) => {
                      return(
 
-                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                     <tr key={member.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                               {member.id}
                            </th>
@@ -505,8 +505,6 @@ const MemberList = () => {
                </tbody>
             </table>
          </div>
-
-
 
       </>
 
