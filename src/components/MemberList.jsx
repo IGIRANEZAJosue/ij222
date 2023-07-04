@@ -8,7 +8,7 @@ const MemberList = () => {
       "email": "dopy0@last.fm",
       "year": 2009,
       "contributions": "$3145.20",
-      "duty": "Member"
+      "duty": "Admin"
     }, {
       "id": 2,
       "fullName": "Russ Neicho",
@@ -355,78 +355,160 @@ const MemberList = () => {
     }]
    
    return (
-      
-      <div class="relative overflow-x-auto">
+      <>
 
-         <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
-            <span className="flex items-center gap-5">
-               <i class="fa-regular fa-user text-[28px]"></i>
-               <h1 className="font-bold text-2xl">Members</h1>
-            </span>
+         {/*Admins*/}
+         <div class="relative overflow-x-auto mb-6 rounded-2xl">
 
-            <button className="flex items-center gap-3 bg-gray-100 px-6 py-3 rounded-xl">
-               <i class="fa-regular fa-circle-plus text-[20px]"></i>
-               <p className=" text-sm font-medium">Add New Admin</p>
-            </button>
-         
+            <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
+               <span className="flex items-center gap-5">
+                  <i class=" fa-solid fa-user-tie-hair text-[32px]"></i>
+                  <h1 className="font-bold text-2xl">Admins</h1>
+               </span>
+
+               <button className="flex items-center gap-3 bg-gray-100 px-6 py-3 rounded-xl">
+                  <i class="fa-regular fa-circle-plus text-[20px]"></i>
+                  <p className=" text-sm font-medium">Add New Admin</p>
+               </button>
+            
+            </div>
+
+            <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+
+               <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
+                  <tr>
+                        <th scope="col" class="px-6 py-3 w-6">
+                           #
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                           Full Name
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                           Email
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/7">
+                           SINCE
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                           Contributions
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                           Duty
+                        </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  {data.map((member) => {
+                     
+                     if (member.duty === "Admin"){
+                        return(
+                           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                 {member.id}
+                              </th>
+                              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                 {member.fullName}
+                              </th>
+                              <td class="px-6 py-4">
+                                 {member.email}
+                              </td>
+                              <td class="px-6 py-4">
+                                 {member.year}
+                              </td>
+                              <td class="px-6 py-4">
+                                 {member.contributions}
+                              </td>
+                              <td class="px-6 py-4">
+                                 {member.duty}
+                              </td>
+                           </tr>  
+                        )
+                     } else {return null;}
+
+                  })}
+                  
+                  
+               </tbody>
+            </table>
          </div>
 
-         <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+         {/*Members */}
+         <div class="relative overflow-x-auto rounded-2xl">
 
-            <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
-               <tr>
-                     <th scope="col" class="px-6 py-3 w-6">
-                        #
-                     </th>
-                     <th scope="col" class="px-6 py-3 w-1/4">
-                        Full Name
-                     </th>
-                     <th scope="col" class="px-6 py-3 w-1/4">
-                        Email
-                     </th>
-                     <th scope="col" class="px-6 py-3 w-1/7">
-                        SINCE
-                     </th>
-                     <th scope="col" class="px-6 py-3">
-                        Contributions
-                     </th>
-                     <th scope="col" class="px-6 py-3">
-                        Duty
-                     </th>
-               </tr>
-            </thead>
-            <tbody>
-               
-               {data.map((member) => {
-                  return(
+            <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
+               <span className="flex items-center gap-5">
+                  <i class="fa-regular fa-user text-[28px]"></i>
+                  <h1 className="font-bold text-2xl">Members</h1>
+               </span>
 
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           {member.id}
+               <button className="flex items-center gap-4 font-medium bg-[#F0F2F5] px-5 py-2 rounded-lg">
+                  <p className=" text-sm">Sort by</p>
+                  <i className="fa-solid fa-chevron-down text-[14px]"></i>
+               </button>
+            
+            </div>
+
+            <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+
+               <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
+                  <tr>
+                        <th scope="col" class="px-6 py-3 w-6">
+                           #
                         </th>
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                           {member.fullName}
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                           Full Name
                         </th>
-                        <td class="px-6 py-4">
-                           {member.email}
-                        </td>
-                        <td class="px-6 py-4">
-                           {member.year}
-                        </td>
-                        <td class="px-6 py-4">
-                           {member.contributions}
-                        </td>
-                        <td class="px-6 py-4">
-                           {member.duty}
-                        </td>
-                     </tr>                     
-                  )
-               })}
-               
-               
-            </tbody>
-         </table>
-      </div>
+                        <th scope="col" class="px-6 py-3 w-1/4">
+                           Email
+                        </th>
+                        <th scope="col" class="px-6 py-3 w-1/7">
+                           SINCE
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                           Contributions
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                           Duty
+                        </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  
+                  {data.map((member) => {
+                     return(
+
+                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              {member.id}
+                           </th>
+                           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              {member.fullName}
+                           </th>
+                           <td class="px-6 py-4">
+                              {member.email}
+                           </td>
+                           <td class="px-6 py-4">
+                              {member.year}
+                           </td>
+                           <td class="px-6 py-4">
+                              {member.contributions}
+                           </td>
+                           <td class="px-6 py-4">
+                              {member.duty}
+                           </td>
+                        </tr>                     
+                     )
+                  })}
+                  
+                  
+               </tbody>
+            </table>
+         </div>
+
+
+
+      </>
 
    )
 }
