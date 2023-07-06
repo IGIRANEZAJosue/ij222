@@ -488,14 +488,20 @@ const PaymentsList = () => {
 
    return (
       <>
-         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white ">
+         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white mb-12 ">
 
-				<div className=" p-4 ">
-					<button className="flex items-center gap-4 font-medium bg-[#F0F2F5] px-5 py-2 rounded-lg hover:outline outline-2 outline-gray-400 duration-300">
+				<div className=" p-4 flex justify-between items-center ">
+					<button className="flex items-center gap-3 font-medium bg-[#F0F2F5] px-5 py-2 rounded-md hover:outline outline-2 outline-gray-400">
 						<i class="fa-solid fa-clock text-[14px] text-[#828282]"></i>
 						<p className=" text-sm">Last 30 days</p>
 						<i className="fa-solid fa-chevron-down text-[14px]"></i>
 					</button>
+
+         <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder='Search..' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
+         </form>
+
 				</div>
 
             <table class="w-full text-base text-left text-gray-900 dark:text-gray-400 py-6">
@@ -554,7 +560,7 @@ const PaymentsList = () => {
 																</td>)
 
 															:	(<td class="px-6 py-4">
-																	<span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">In Process</span>
+																	<span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">In Process</span>
 																</td>) 
                           	}
 
