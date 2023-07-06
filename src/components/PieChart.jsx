@@ -34,8 +34,8 @@ const PieChart = () => {
                <p className=" text-sm font-light">January</p>
             </span>
             
-            <button className="flex items-center gap-4 text-[16px] font-medium bg-[#F0F2F5] px-5 py-[6px] rounded-lg">
-               Jan
+            <button className="flex items-center gap-4 text-[14px] font-medium bg-[#F0F2F5] px-5 py-[6px] rounded-lg hover:outline outline-2 outline-gray-400">
+               <p>Jan</p>
                <i className="fa-solid fa-chevron-down text-[14px]"></i>
             </button>
 

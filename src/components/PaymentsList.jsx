@@ -488,8 +488,17 @@ const PaymentsList = () => {
 
    return (
       <>
-         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg">
-            <table class="w-full text-base text-left text-gray-900 dark:text-gray-400">
+         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white ">
+
+				<div className=" p-4 ">
+					<button className="flex items-center gap-4 font-medium bg-[#F0F2F5] px-5 py-2 rounded-lg hover:outline outline-2 outline-gray-400 duration-300">
+						<i class="fa-solid fa-clock text-[14px] text-[#828282]"></i>
+						<p className=" text-sm">Last 30 days</p>
+						<i className="fa-solid fa-chevron-down text-[14px]"></i>
+					</button>
+				</div>
+
+            <table class="w-full text-base text-left text-gray-900 dark:text-gray-400 py-6">
 
                <thead class="text-sm text-gray-900 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
                   <tr>
@@ -531,12 +540,24 @@ const PaymentsList = () => {
                            <td class="px-6 py-4">
                               {payment.date} , {payment.time}
                            </td>
-                           <td class="px-6 py-4 font-bold">
+                           <td class="px-6 py-4 font-semibold">
                               {payment.amount}
                            </td>
-                           <td class="px-6 py-4">
-                              {payment.status}
-                           </td>
+                           {payment.status=="Completed" ? 	
+															(<td class="px-6 py-4">
+                                             	<span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
+                                      			</td>) 
+
+															: payment.status=="Cancelled" ? 
+																(<td class="px-6 py-4">
+																	<span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Cancelled</span>
+																</td>)
+
+															:	(<td class="px-6 py-4">
+																	<span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">In Process</span>
+																</td>) 
+                          	}
+
                      </tr>                     
                      )
                   })}

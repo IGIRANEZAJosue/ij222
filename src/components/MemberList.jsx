@@ -442,7 +442,7 @@ const MemberList = () => {
                   <h1 className="font-bold text-2xl">Members</h1>
                </span>
 
-               <button className="flex items-center gap-4 font-medium bg-[#F0F2F5] px-5 py-2 rounded-lg">
+               <button className="flex items-center gap-4 font-medium bg-[#F0F2F5] px-5 py-2 rounded-lg hover:outline outline-2 outline-gray-400">
                   <p className=" text-sm">Sort by</p>
                   <i className="fa-solid fa-chevron-down text-[14px]"></i>
                </button>
