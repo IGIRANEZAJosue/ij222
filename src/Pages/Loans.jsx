@@ -6,7 +6,7 @@ import LoanList from '../components/LoanList';
 
 const Loans = () => {
    return (
-      <div className='p-4 w-[82vw]'>
+      <div className='py-4 px-5 w-[82vw]'>
       
          <DashboardHeader page="Loans" />
 

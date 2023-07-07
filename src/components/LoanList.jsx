@@ -263,74 +263,75 @@ const LoanList = () => {
 
             <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
 
-            <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
-               <tr>
-                  <th scope="col" class="px-6 py-3 w-6">
-                     #
-                  </th>
-                  <th scope="col" class="px-6 py-3 w-1/5">
-                     Name
-                  </th>
-                  <th scope="col" class="px-6 py-3 w-1/4">
-                     Email
-                  </th>
-                  <th scope="col" class="px-6 py-3 w-1/5">
-                     date & time 
-                  </th>
-                  <th scope="col" class="px-6 py-3">
-                     Contributions
-                  </th>
-                  <th scope="col" class="px-6 py-3">
-                     Duty
-                  </th>
-               </tr>
-            </thead>
-
-            <tbody>
-                  
-               {loanList.map((member) => {
-                  return(
-
-                  <tr key={member.id} class="bg-white text-sm border-b dark:bg-gray-800 dark:border-gray-700">
-                     
-                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        {member.id}
+               <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
+                  <tr>
+                     <th scope="col" class="px-6 py-3 w-6 ">
+                        <input type="checkbox" name="checkbox" id="" />
                      </th>
-                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        {member.fullName}
+                     <th scope="col" class="px-6 py-3 w-1/5">
+                        Name
                      </th>
-                     <td class="px-6 py-4">
-                        {member.email}
-                     </td>
-                     <td class="px-6 py-4">
-                        {member.date}, {member.time}
-                     </td>
-                     <td class="px-6 py-4 font-semibold">
-                        {member.amount}
-                     </td>
+                     <th scope="col" class="px-6 py-3 w-1/4">
+                        Email
+                     </th>
+                     <th scope="col" class="px-6 py-3 w-1/5">
+                        date & time 
+                     </th>
+                     <th scope="col" class="px-6 py-3">
+                        Contributions
+                     </th>
+                     <th scope="col" class="px-6 py-3">
+                        Duty
+                     </th>
+                  </tr>
+               </thead>
 
-                     {member.status=="Completed" ? 	
-                                          (<td class="px-6 py-4">
-                                             <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
-                                          </td>) 
-
-                                       :  member.status=="Paused" ? 
-                                          (<td class="px-6 py-4">
-                                             <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Paused</span>
-                                          </td>)
-
-                                       :	(<td class="px-6 py-4">
-                                             <span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Active</span>
-                                          </td>) 
-                     }
-                  </tr>                     
+               <tbody>
                      
-                  )
+                  {loanList.map((member) => {
+                     return(
 
-                  })}
-                  
-                  
+                     <tr key={member.id} class="bg-white text-sm border-b dark:bg-gray-800 dark:border-gray-700">
+                        
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                           <input type="checkbox" name="checkbox" id="" />
+                        </th>
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                           {member.fullName}
+                        </th>
+                        <td class="px-6 py-4">
+                           {member.email}
+                        </td>
+                        <td class="px-6 py-4">
+                           {member.date}, {member.time}
+                        </td>
+                        <td class="px-6 py-4 font-semibold">
+                           {member.amount}
+                        </td>
+
+                        {member.status=="Completed" ? 	
+                                             (<td class="px-6 py-4">
+                                                <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
+                                             </td>) 
+
+                                          :  member.status=="Paused" ? 
+                                             (<td class="px-6 py-4">
+                                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Paused</span>
+                                             </td>)
+
+                                          :	(<td class="px-6 py-4">
+                                                <span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Active</span>
+                                             </td>) 
+                        }
+                     </tr>                     
+                        
+                     )
+
+                     })}
+                     
+                     
                </tbody>
+
             </table>
 
          </div>   

@@ -523,7 +523,7 @@ const PaymentsList = () => {
                         <th scope="col" class="px-6 py-3 w-1/8">
                            AMOUNT
                         </th>
-                        <th scope="col" class="px-6 py-3 w-1/8">
+                        <th scope="col" class="px-6 py-3 w-1/7">
                            STATUS
                         </th>
                   </tr>
