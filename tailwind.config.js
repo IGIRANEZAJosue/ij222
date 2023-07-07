@@ -30,7 +30,7 @@ export default {
       montserrat: ['Montserrat', 'sans-serif'],
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [],
   //plugins: [require("daisyui")],
 }
 

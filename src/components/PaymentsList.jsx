@@ -497,12 +497,12 @@ const PaymentsList = () => {
 						<i className="fa-solid fa-chevron-down text-[14px]"></i>
 					</button>
 
-         <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input placeholder='Search..' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
-         </form>
+               <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <input placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
+               </form>
 
-				</div>
+			   </div>
 
             <table class="w-full text-base text-left text-gray-900 dark:text-gray-400 py-6">
 

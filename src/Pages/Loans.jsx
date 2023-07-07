@@ -1,6 +1,8 @@
 
 import DashboardHeader from '../components/DashboardHeader';
 import AnalyticsCards from '../components/AnalyticsCards';
+import PaymentsList from '../components/PaymentsList';
+import LoanList from '../components/LoanList';
 
 const Loans = () => {
    return (
@@ -10,6 +12,7 @@ const Loans = () => {
 
          <AnalyticsCards />
 
+         <LoanList />
 
       </div>
    )
