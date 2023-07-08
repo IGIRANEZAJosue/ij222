@@ -5,11 +5,10 @@ import Sidebar from './Sidebar'
 import Dashboard from "./Pages/Dashboard"
 import Payments from "./Pages/Payments"
 import Loans from "./Pages/Loans"
-import Profile from "./Pages/Members"
+import Members from './Pages/Members'
 import Settings from "./Pages/Settings"
 
 import { Route, Routes } from "react-router-dom"
-import Members from './Pages/Members'
 
 
 
@@ -24,7 +23,7 @@ function App() {
 			<div className="container min-h-screen ml-[17vw]">
 
 				<Routes>
-					<Route path='/' element={<Dashboard/>} />
+					<Route path='/' element={<Home/>} />
 					<Route path='/dashboard' element={<Dashboard />} />
 					<Route path='/payments' element={<Payments />} />
 					<Route path='/loans' element={<Loans />} />
