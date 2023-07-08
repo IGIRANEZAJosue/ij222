@@ -268,7 +268,7 @@ const LoanList = () => {
                      <th scope="col" class="px-6 py-3 w-6 ">
                         <input type="checkbox" name="checkbox" id="" />
                      </th>
-                     <th scope="col" class="px-6 py-3 w-1/5">
+                     <th scope="col" class="px-6 py-3 w-1/6">
                         Name
                      </th>
                      <th scope="col" class="px-6 py-3 w-1/4">

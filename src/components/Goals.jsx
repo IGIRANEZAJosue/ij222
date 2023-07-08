@@ -1,4 +1,4 @@
-import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+
 import 'react-circular-progressbar/dist/styles.css';
 
 import Goal from './Goal';
@@ -12,7 +12,7 @@ const Goals = () => {
    const loanPayments = 30;
 
    return (
-      <div className=" flex flex-col gap-2 text-gray-800 pt-4">
+      <div className=" flex flex-col gap-2 text-gray-800 mt-8">
          <h1 className=" font-semibold text-[24px]">Goals</h1>
 
          <div className="goals flex gap-6">

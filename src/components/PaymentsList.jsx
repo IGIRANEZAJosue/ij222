@@ -483,8 +483,6 @@ const PaymentsList = () => {
       "amount": "$668.66",
       "status": "Completed"
     }]
-    
-    
 
    return (
       <>
@@ -509,7 +507,7 @@ const PaymentsList = () => {
                <thead class="text-sm text-gray-900 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
                   <tr>
                         <th scope="col" class="px-4 py-2 w-4">
-                           #
+                          <input type="checkbox" name="checkbox" id="" />
                         </th>
                         <th scope="col" class="px-6 py-3 w-1/5">
                            NAME
@@ -535,7 +533,7 @@ const PaymentsList = () => {
 
                      <tr key={payment.id} class="bg-white text-gray-900 border-b dark:bg-gray-800 dark:border-gray-700 text-sm">
                            <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                              {payment.id}
+                            <input type="checkbox" name="checkbox" id="" />
                            </th>
                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                               {payment.fullName}
@@ -560,7 +558,7 @@ const PaymentsList = () => {
 																</td>)
 
 															:	(<td class="px-6 py-4">
-																	<span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">In Process</span>
+																	<span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">In Progress</span>
 																</td>) 
                           	}
 
