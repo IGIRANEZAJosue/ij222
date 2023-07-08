@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+
 import Goals from '../components/Goals';
 import DashboardHeader from '../components/DashboardHeader';
 import BarChart from '../components/BarChart';
 import PieChart from '../components/PieChart';
 import AnalyticsCards from '../components/AnalyticsCards';
+import LineChart from '../components/linechart';
+import Provinces from '../components/Provinces';
 
 
 const Dashboard = () => {
@@ -25,7 +26,17 @@ const Dashboard = () => {
                <div className=" w-2/3">
                   <BarChart />
                </div>
+            </div>
+
+            <div className="flex items-center gap-6">
             
+               <div className=" w-2/3 ">
+                  <LineChart />
+               </div>
+               <div className=" w-1/3 ">
+                  <Provinces />
+               </div>
+
             </div>
 
             <Goals />

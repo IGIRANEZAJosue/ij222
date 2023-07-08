@@ -7,7 +7,6 @@ import Payments from "./Pages/Payments"
 import Loans from "./Pages/Loans"
 import Profile from "./Pages/Members"
 import Settings from "./Pages/Settings"
-import Home from './Pages/Home'
 
 import { Route, Routes } from "react-router-dom"
 import Members from './Pages/Members'
