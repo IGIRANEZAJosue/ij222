@@ -33,7 +33,8 @@ const Dashboard = () => {
             <div className="flex items-center gap-6">
             
                <div className=" w-2/3 ">
-                  <LineChart />
+                  {/*<LineChart /> */}
+                  hello
                </div>
                <div className=" w-1/3 ">
                   <Provinces />
