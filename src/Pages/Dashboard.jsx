@@ -4,7 +4,6 @@ import DashboardHeader from '../components/DashboardHeader';
 import BarChart from '../components/BarChart';
 import PieChart from '../components/PieChart';
 import AnalyticsCards from '../components/AnalyticsCards';
-import LineChart from '../components/linechart';
 import Provinces from '../components/Provinces';
 import MemberGrowthChart from '../components/MemberGrowthChart';
 import CummulativeGrowthChart from '../components/CummulativeGrowthChart';
