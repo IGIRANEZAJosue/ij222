@@ -4,6 +4,7 @@ import DashboardHeader from '../components/DashboardHeader';
 import BarChart from '../components/BarChart';
 import PieChart from '../components/PieChart';
 import AnalyticsCards from '../components/AnalyticsCards';
+import LineChart from '../components/LineChart';
 import Provinces from '../components/Provinces';
 import MemberGrowthChart from '../components/MemberGrowthChart';
 import CummulativeGrowthChart from '../components/CummulativeGrowthChart';
@@ -20,34 +21,33 @@ const Dashboard = () => {
             <AnalyticsCards />
 
             <div className=" flex items-center gap-6 py-6">
-               <div className=" w-1/3">
+               <span className=" w-1/3">
                   <PieChart />
-               </div>
+               </span>
 
-               <div className=" w-2/3">
+               <span className=" w-2/3">
                   <BarChart />
-               </div>
+               </span>
             </div>
 
             <div className="flex items-center gap-6">
             
-               <div className=" w-2/3 ">
-                  {/*<LineChart /> */}
-                  hello
-               </div>
-               <div className=" w-1/3 ">
+               <span className=" w-2/3 ">
+                  <LineChart />
+               </span>
+               <span className=" w-1/3 ">
                   <Provinces />
-               </div>
+               </span>
 
             </div>
 
             <div className="flex items-center gap-6 mt-6">
-               <div className=" w-1/3 ">
+               <span className=" w-1/3 ">
                   <CummulativeGrowthChart />
-               </div>
-               <div className="w-2/3">
+               </span>
+               <span className="w-2/3">
                   <MemberGrowthChart />
-               </div>
+               </span>
             </div>
 
             <Goals />

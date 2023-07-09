@@ -24,7 +24,7 @@ function App() {
 			<div className="container min-h-screen ml-[17vw]">
 
 				<Routes>
-					<Route path='/' element={<Home />} />
+					<Route path='/' element={<Dashboard />} />
 					<Route path='/dashboard' element={<Dashboard />} />
 					<Route path='/payments' element={<Payments />} />
 					<Route path='/loans' element={<Loans />} />
