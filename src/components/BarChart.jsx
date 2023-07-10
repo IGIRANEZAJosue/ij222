@@ -44,8 +44,6 @@ const BarChart = () => {
    }
 
 
-
-
    return (
 
       <div className=" bg-white p-4 h-[390px] rounded-2xl">

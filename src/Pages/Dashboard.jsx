@@ -14,7 +14,7 @@ const Dashboard = () => {
    
    return (
       <>
-         <div className='font-Poppins text-gray-900 w-[82vw] p-4 overflow-hidden  bg-[#f0f2f5] mb-12'>
+         <div className=' font-poppins text-gray-900 w-[82vw] p-4 overflow-hidden  bg-[#f0f2f5] mb-12'>
            
             <DashboardHeader page="Dashboard" />
 

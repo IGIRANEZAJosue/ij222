@@ -358,7 +358,7 @@ const MemberList = () => {
       <>
 
          {/*Admins*/}
-         <div class="relative overflow-x-auto mb-6 rounded-2xl drop-shadow-lg">
+         <div class=" relative overflow-x-auto mb-6 rounded-2xl drop-shadow-lg">
 
             <div className="flex justify-between items-center bg-white text-gray-800 px-6 py-4 bor">
                <span className="flex items-center gap-5">
@@ -403,7 +403,7 @@ const MemberList = () => {
                      
                      if (member.duty === "Admin"){
                         return(
-                           <tr key={member.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                           <tr key={member.id} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 font-poppins">
                               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                  {member.id}
                               </th>

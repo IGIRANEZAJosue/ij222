@@ -1,4 +1,5 @@
 import React from 'react'
+import Dropdown from './Dropdown'
 
 const DashboardHeader = ({page}) => {
    return (
@@ -17,11 +18,9 @@ const DashboardHeader = ({page}) => {
                <i class="fa-solid fa-circle-user text-[24px]"></i>
                <i class="fa-solid fa-caret-down"></i>
             </span>
+            
+            <Dropdown />
 
-            <button className=" flex items-center justify-center w-12 h-12 bg-primaryCol/20 rounded-xl hover:outline outline-3">
-               <h1 className=" font-bold text-textBlack text-[20px]">M</h1>
-            </button>
-               
          </span>
 
       </header>
