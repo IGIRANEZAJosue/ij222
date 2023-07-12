@@ -1,5 +1,6 @@
 import React from 'react'
 import Dropdown from './Dropdown'
+import SortBy from './SortBy'
 
 const DashboardHeader = ({page}) => {
    return (

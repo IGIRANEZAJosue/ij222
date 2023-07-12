@@ -1,5 +1,6 @@
 
 import Chart from "react-apexcharts"
+import SortBy from "./SortBy"
 
 const PieChart = () => {
 
@@ -22,7 +23,7 @@ const PieChart = () => {
 
    }
 
-   const series = [60, 40]
+   const series = [60, 40];
 
    return (
       <div className="bg-white h-[390px] p-[16px] rounded-2xl ">
@@ -34,10 +35,10 @@ const PieChart = () => {
                <p className=" text-sm font-light">January</p>
             </span>
             
-            <button className="flex items-center gap-4 text-[14px] font-medium bg-[#F0F2F5] px-5 py-[6px] rounded-lg hover:outline outline-2 outline-gray-400">
-               <p>Jan</p>
-               <i className="fa-solid fa-chevron-down text-[14px]"></i>
-            </button>
+            
+            <SortBy />
+
+            
 
          </div>
 

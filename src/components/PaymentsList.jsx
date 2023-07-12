@@ -558,7 +558,7 @@ const PaymentsList = () => {
 																</td>)
 
 															:	(<td class="px-6 py-4">
-																	<span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">In Progress</span>
+																	<span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Processing</span>
 																</td>) 
                           	}
 
