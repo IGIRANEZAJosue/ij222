@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LoanList = () => {
 
@@ -242,7 +242,10 @@ const LoanList = () => {
       "status": "Active",
       "date": "18/01/2023",
       "time": "11:46"
-    }]
+      }]
+   
+   const [searchTerm, setSearchTerm] = useState('');
+   
    
    return (
       <> 
@@ -257,7 +260,7 @@ const LoanList = () => {
 
                <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
                   <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                  <input placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
+                  <input onChange={(e) => {setSearchTerm(e.target.value)}} placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
                </form>
             </div>
 
@@ -288,8 +291,18 @@ const LoanList = () => {
 
                <tbody>
                      
-                  {loanList.map((member) => {
-                     return(
+               {loanList.filter((member) => {
+                  if(searchTerm === ""){
+                     return member
+                  }
+
+                  else if (member.fullName.toLowerCase().includes(searchTerm.toLowerCase())) {
+                     return member
+                  }
+
+               }).map((member) => {
+                     
+                  return(
 
                      <tr key={member.id} class="bg-white text-sm border-b dark:bg-gray-800 dark:border-gray-700">
                         

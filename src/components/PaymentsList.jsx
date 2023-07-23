@@ -541,40 +541,41 @@ const PaymentsList = () => {
                      }
 
                   }).map((payment) => {
+                     
                      return(
 
-                     <tr key={payment.id} class="bg-white text-gray-900 border-b dark:bg-gray-800 dark:border-gray-700 text-sm">
-                           <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <input type="checkbox" name="checkbox" id="" />
-                           </th>
-                           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                              {payment.fullName}
-                           </th>
-                           <td class="px-6 py-4 text-black">
-                              {payment.transaction}
-                           </td>
-                           <td class="px-6 py-4">
-                              {payment.date} , {payment.time}
-                           </td>
-                           <td class="px-6 py-4 font-semibold">
-                              {payment.amount}
-                           </td>
-                           {payment.status=="Completed" ? 	
-															(<td class="px-6 py-4">
-                                             	<span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
-                                      			</td>) 
+                        <tr key={payment.id} class="bg-white text-gray-900 border-b dark:bg-gray-800 dark:border-gray-700 text-sm">
+                              <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                              <input type="checkbox" name="checkbox" id="" />
+                              </th>
+                              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                 {payment.fullName}
+                              </th>
+                              <td class="px-6 py-4 text-black">
+                                 {payment.transaction}
+                              </td>
+                              <td class="px-6 py-4">
+                                 {payment.date} , {payment.time}
+                              </td>
+                              <td class="px-6 py-4 font-semibold">
+                                 {payment.amount}
+                              </td>
+                              {payment.status=="Completed" ? 	
+                                                (<td class="px-6 py-4">
+                                                   <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
+                                                </td>) 
 
-															: payment.status=="Cancelled" ? 
-																(<td class="px-6 py-4">
-																	<span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Cancelled</span>
-																</td>)
+                                                : payment.status=="Cancelled" ? 
+                                                   (<td class="px-6 py-4">
+                                                      <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Cancelled</span>
+                                                   </td>)
 
-															:	(<td class="px-6 py-4">
-																	<span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Processing</span>
-																</td>) 
-                          	}
+                                                :	(<td class="px-6 py-4">
+                                                      <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Processing</span>
+                                                   </td>) 
+                              }
 
-                     </tr>                     
+                        </tr>                     
                      )
                   })}
                   
