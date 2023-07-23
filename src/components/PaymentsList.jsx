@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const PaymentsList = () => {
 
@@ -484,6 +484,9 @@ const PaymentsList = () => {
       "status": "Completed"
     }]
 
+    const [searchTerm, setSearchTerm] = useState('');
+
+
    return (
       <>
          <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white mb-12 ">
@@ -497,7 +500,7 @@ const PaymentsList = () => {
 
                <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
                   <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                  <input placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
+                  <input onChange={(e) => {setSearchTerm(e.target.value)}} placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
                </form>
 
 			   </div>
@@ -528,7 +531,16 @@ const PaymentsList = () => {
                </thead>
 
                <tbody>
-                  {paymentInfo.map((payment) => {
+                  {paymentInfo.filter((payment) => {
+                     if(searchTerm === ""){
+                        return payment
+                     }
+
+                     else if (payment.fullName.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        return payment
+                     }
+
+                  }).map((payment) => {
                      return(
 
                      <tr key={payment.id} class="bg-white text-gray-900 border-b dark:bg-gray-800 dark:border-gray-700 text-sm">
