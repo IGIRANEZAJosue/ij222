@@ -33,7 +33,8 @@ const Dashboard = () => {
             <div className="flex items-center gap-6">
             
                <span className=" w-2/3 ">
-                  <LineChart />
+                  linechart goes here but its actin up
+                  {/* <LineChart /> */}
                </span>
                <span className=" w-1/3 ">
                   <Provinces />

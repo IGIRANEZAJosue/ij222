@@ -485,8 +485,7 @@ const PaymentsList = () => {
     }]
 
     const [searchTerm, setSearchTerm] = useState('');
-
-
+ 
    return (
       <>
          <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white mb-12 ">
