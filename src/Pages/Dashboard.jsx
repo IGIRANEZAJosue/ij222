@@ -7,6 +7,7 @@ import AnalyticsCards from '../components/AnalyticsCards';
 import Provinces from '../components/Provinces';
 import MemberGrowthChart from '../components/MemberGrowthChart';
 import CummulativeGrowthChart from '../components/CummulativeGrowthChart';
+import LineChart from '../components/LineChart';
 
 
 const Dashboard = () => {
@@ -32,8 +33,8 @@ const Dashboard = () => {
             <div className="flex items-center gap-6">
             
                <span className=" w-2/3 ">
-                  linechart goes here but its actin up
-                  {/* <LineChart /> */}
+                  <LineChart />
+
                </span>
                <span className=" w-1/3 ">
                   <Provinces />
