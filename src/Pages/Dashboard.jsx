@@ -7,7 +7,6 @@ import AnalyticsCards from '../components/AnalyticsCards';
 import Provinces from '../components/Provinces';
 import MemberGrowthChart from '../components/MemberGrowthChart';
 import CummulativeGrowthChart from '../components/CummulativeGrowthChart';
-import LineChart from '../components/linechart';
 
 
 const Dashboard = () => {
