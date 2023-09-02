@@ -1,10 +1,6 @@
-import React, { useState } from 'react'
-import Dropdown from './Dropdown'
-import SortBy from './SortBy'
-import NotificationPanel from './NotificationPanel'
-import ProfilePanel from './ProfilePanel'
+import React from 'react'
 
-const DashboardHeader = ({page}) => {
+const NotificationPanel = ({notificationPanel, handleNotificationPanel}) => {
 
    const notifications = [{
       "id": 1,
@@ -61,49 +57,32 @@ const DashboardHeader = ({page}) => {
       "id": 18,
       "notification": "You have Increased 50 points on your Level Progression. Your current points are 910."
     }]
-    
-
-   const [notificationPanel, setNotificationPanel] = useState(false);
-   const [profilePanel, setProfilePanel] = useState(false);
-
-
-   const handleNotificationPanel = () => {
-      setNotificationPanel(!notificationPanel);
-   };
-
-   const handleProfilePanel = () => {
-      setProfilePanel(!profilePanel);
-   };
-
 
    return (
+      <div className={ notificationPanel ? " p-4 fixed top-0 w-[20vw] right-0 z-30 h-screen bg-white shadow-lg  ease-in-out duration-500 overflow-y-auto " : " fixed right-[-100%]" }>
+            <div className=" flex items-center justify-between pb-4 bg-white">
+               <h1 className=' font-bold text-xl'>Notifications</h1>
+               <span onClick={handleNotificationPanel} className=" flex justify-center items-center hover:bg-red-100 hover:text-red-400 p-2 rounded-full w-8 h-8 cursor-pointer duration-100 ">
+                  <i className="fa-solid fa-xmark text-[18px]"></i>
+               </span>
+            </div>
 
-      <header className="flex justify-between pb-4 pr-4">
-               
-         <h1 className="text-[28px] font-semibold">{page}</h1>
-
-         <span className=" flex items-center gap-6 text-[#828282]">
-
-            <span onClick={handleNotificationPanel} className=" flex items-center gap-1 cursor-pointer">
-               <i class="fa-regular fa-bell text-[24px]"></i>
-               <i class="fa-solid fa-caret-down"></i>
-            </span>
-            <span onClick={handleProfilePanel} className=" flex items-center gap-1 cursor-pointer">
-               <i class="fa-solid fa-circle-user text-[24px]"></i>
-               <i class="fa-solid fa-caret-down"></i>
-            </span>
-            
-            <Dropdown />
-
-         </span>
-
-         {/*NOTIFICATION PANEL*/}
-         <NotificationPanel notificationPanel={notificationPanel} handleNotificationPanel={handleNotificationPanel} />
-
-         <ProfilePanel handleProfilePanel={handleProfilePanel} profilePanel={profilePanel} />
-
-      </header>
+               {notifications.map((noti) => (
+                  <div key={noti.id} className="text-[14px] flex flex-col gap-3 mb-3">
+                     <div className=" bg-primaryCol/10 w-full p-3 rounded-xl">
+                        <p>
+                           {noti.notification}
+                        </p>
+                        <span className="flex items-center gap-2 mt-2 text-xs text-black/60">
+                           <i className="fa-regular fa-clock"></i>
+                           <p>1 DAY AGO</p>
+                        </span>
+                     </div>
+                  </div>
+               ))}
+      
+         </div>
    )
 }
 
-export default DashboardHeader
+export default NotificationPanel
