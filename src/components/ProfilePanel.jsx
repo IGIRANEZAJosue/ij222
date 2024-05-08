@@ -62,7 +62,7 @@ const ProfilePanel = ({profilePanel, handleProfilePanel}) => {
    return (
       <div className={ profilePanel ? " p-4 fixed top-0 w-[20vw] right-0 z-30 h-screen bg-white shadow-lg  ease-in-out duration-500 overflow-y-auto " : " fixed right-[-100%]" }>
             <div className=" flex items-center justify-between pb-4 bg-white">
-               <h1 className=' font-bold text-xl'>Notifications</h1>
+               <h1 className=' font-bold text-xl'>Profile</h1>
                <span onClick={handleProfilePanel} className=" flex justify-center items-center hover:bg-red-100 hover:text-red-400 p-2 rounded-full w-8 h-8 cursor-pointer duration-100 ">
                   <i className="fa-solid fa-xmark text-[18px]"></i>
                </span>

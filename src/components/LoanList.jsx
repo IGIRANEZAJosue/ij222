@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react'
 
 const LoanList = () => {
@@ -250,40 +251,40 @@ const LoanList = () => {
    return (
       <> 
 
-         <div class="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white my-6 ">
+         <div className="relative overflow-x-auto rounded-2xl drop-shadow-lg bg-white my-6 ">
 
             <div className=" p-4 flex justify-between items-center ">
                <span className="flex items-center gap-3 font-bold text-[24px] ">
-                  <i class="fa-regular fa-circle-dollar"></i>
+                  <i className="fa-regular fa-circle-dollar"></i>
                   <h1>Active Loans</h1>
                </span>
 
                <form className=" flex items-center gap-2 bg-[#f0f2f5] border-2 border-gray-300 px-4 rounded-lg">
-                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i className="fa-solid fa-magnifying-glass"></i></button>
                   <input onChange={(e) => {setSearchTerm(e.target.value)}} placeholder='Search...' type="text" className=" px-2 py-[6px] w-[320px] text-[14px] bg-transparent outline-none" />
                </form>
             </div>
 
-            <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+            <table className="w-full text-sm text-left text-gray-600 dark:text-gray-400">
 
-               <thead class="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
+               <thead className="text-sm text-gray-700 uppercase bg-white dark:bg-gray-700 dark:text-gray-400 ">
                   <tr>
-                     <th scope="col" class="px-6 py-3 w-6 ">
+                     <th scope="col" className="px-6 py-3 w-6 ">
                         <input type="checkbox" name="checkbox" id="" />
                      </th>
-                     <th scope="col" class="px-6 py-3 w-1/6">
+                     <th scope="col" className="px-6 py-3 w-1/6">
                         Name
                      </th>
-                     <th scope="col" class="px-6 py-3 w-1/4">
+                     <th scope="col" className="px-6 py-3 w-1/4">
                         Email
                      </th>
-                     <th scope="col" class="px-6 py-3 w-1/5">
+                     <th scope="col" className="px-6 py-3 w-1/5">
                         date & time 
                      </th>
-                     <th scope="col" class="px-6 py-3">
+                     <th scope="col" className="px-6 py-3">
                         Contributions
                      </th>
-                     <th scope="col" class="px-6 py-3">
+                     <th scope="col" className="px-6 py-3">
                         Duty
                      </th>
                   </tr>
@@ -304,36 +305,36 @@ const LoanList = () => {
                      
                   return(
 
-                     <tr key={member.id} class="bg-white text-sm border-b dark:bg-gray-800 dark:border-gray-700">
+                     <tr key={member.id} className="bg-white text-sm border-b dark:bg-gray-800 dark:border-gray-700">
                         
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                            <input type="checkbox" name="checkbox" />
                         </th>
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                            {member.fullName}
                         </th>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                            {member.email}
                         </td>
-                        <td class="px-6 py-4">
+                        <td className="px-6 py-4">
                            {member.date}, {member.time}
                         </td>
-                        <td class="px-6 py-4 font-semibold">
+                        <td className="px-6 py-4 font-semibold">
                            {member.amount}
                         </td>
 
                         {member.status=="Completed" ? 	
-                                             (<td class="px-6 py-4">
-                                                <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
+                                             (<td className="px-6 py-4">
+                                                <span className="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Confirmed</span>
                                              </td>) 
 
                                           :  member.status=="Paused" ? 
-                                             (<td class="px-6 py-4">
-                                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Paused</span>
+                                             (<td className="px-6 py-4">
+                                                <span className="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Paused</span>
                                              </td>)
 
-                                          :	(<td class="px-6 py-4">
-                                                <span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Active</span>
+                                          :	(<td className="px-6 py-4">
+                                                <span className="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Active</span>
                                              </td>) 
                         }
                      </tr>                     
